@@ -15,6 +15,15 @@
         var x = 0;
         var y = 0;
 
+        document.onkeypress = function (e) {
+          e = e || window.event;
+          // use e.keyCode
+          if (e.keyCode == 'w')
+          {
+            y += 10;
+          }
+        };
+
         function startGame()
         {
           update();
