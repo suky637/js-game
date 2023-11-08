@@ -6,7 +6,17 @@
   <body>
     <h1>Old Game Emulator</h1>
     <canvas id="gameWindow" width="400" height="300"></canvas>
-    <script src="main.js"></script>
+    <script>
+      
+        var canvas = document.getElementById("gameWindow");
+        var ctx = canvas.getContext("2d");
+
+        function render()
+        {
+            ctx.fillStyle = "#054DF2";
+            ctx.fillRect(0, 0, 400, 300);
+        }
+    </script>
     <p>Made by Suky Laplante</p>
   </body>
 </html>
