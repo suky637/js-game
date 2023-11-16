@@ -4,43 +4,14 @@
     <title>Simple Javascript Game</title>
   </head>
   <body>
-    <h1>Old Game Emulator</h1>
-    <canvas id="gameWindow" width="400" height="300"></canvas><br>
-    <button onclick="startGame()">Start Game</button>
-    <script>
-      
-        var canvas = document.getElementById("gameWindow");
-        var ctx = canvas.getContext("2d");
-
-        var x = 0;
-        var y = 0;
-
-        document.onkeypress = function (e) {
-          e = e || window.event;
-          // use e.keyCode
-          if (e.keyCode == 'w')
-          {
-            y += 10;
-          }
-        };
-
-        function startGame()
-        {
-          update();
-        }
-      
-        function update()
-        {
-            ctx.fillStyle = "#054DF2";
-            ctx.fillRect(0, 0, 400, 300);
-
-            ctx.fillStyle = "#FFFFFF";
-            ctx.fillRect(x,y,10,10);
-            
-            ctx.stroke();
-            update = setInterval(update, 60);
-        }
-    </script>
-    <p>Made by Suky Laplante</p>
+    <h1>Clicker Game</h1>
+    <image src="png.png" onclick="click()">
   </body>
+  <script>
+    function click()
+      {
+        console.log("WORKS BOIII")
+      }
+    
+  </script>
 </html>
