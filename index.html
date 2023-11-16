@@ -8,9 +8,11 @@
     <image src="png.png" onclick="click()">
   </body>
   <script>
+    let clicks = 0;
     function click()
       {
-        console.log("WORKS BOIII")
+        clicks = clicks + 1;
+        alert(clicks)
       }
     
   </script>
